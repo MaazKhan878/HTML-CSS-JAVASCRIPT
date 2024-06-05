@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        FORM ELEMENTS: 
+        INPUT tag: <input type = "text" placeholder="Enter">: input: what user enter
+        placeholder: give msg to the user 
+        Labels Element: Tag assigned on the button for end user and also used
+        as a radio button where chose in choice
+        always value send to backend
+        Label benefit is that if yoy click on the label it well works 
+        like radio button if you click on the text for radio button it well work
+        Attribute Class And Id:
+        we can assign any tag one class and id
+        class: for whole group 
+        id: individual
+        supposed i want to change the whole button color to red so i can do that by class name then all button change to red
+        if i want to change the individual button color i can do by the id name
+        Check Box: when give option where you select multiple option
+        Text Area: Use to fill form or also used for feedback etc
+        Select: use for drop down list
+        <select name = "" id = "" class = ""> <option value = ""> ""</option> </select> all these are implement below
+        submit: submit take all info to database through backends
+        iframe tag: website inside website: use website inside website
+        you can run video player inside it
+        but some website not allowed it
+        video tag: we can share embed video on website
+        Attribute: Controls height width loop autoplay
+        <video src =" "  id= "" class = "" controls = "" autoplay = "" height = "" width = "" loop = ""</video>
+        
+
+    -->
+</head>
+<body>
+    <h4><b>REGISTRATION FORM</b></h4>
+    <form action="/action.php">
+        <h5>Select Your Class</h5>
+        <input type="text" placeholder = "User name">
+        <br>
+        <br>
+        <input type="password" placeholder = "Password">
+        <br>
+        <br>
+        <label for = "101">
+        <input type="radio" value = "Class XI" name = "Class" id = "101">Class XI
+        </label>
+        <br>
+        <br>
+        <label for ="102">
+        <input type = "radio" value = "Class xII" name = "Class" id = "102">Class xII
+        </label>
+        <div class ="group1" id = "id1"></div>
+        <div class = "group1" id = "id2"></div>
+        <h5>Select Your Subject</h5>
+        <label for="103">
+            <input type="checkbox" value = "math" name = "subject" id = "103" >math
+        </label>
+        <br><br>
+        <label for="104">
+            <input type="checkbox" value= "physics" name="subject" id="104">Physics
+        </label>
+        <br><br>
+        <label for="105">
+            <input type="checkbox" value= "OPPs" name="subject" id="105">OPPs
+        </label>
+        <br><br>
+        <label for="106">
+            <input type="checkbox" value= "Calculus" name="subject" id="106">Calculus
+        </label>
+        <br><br>
+        <h5>Select city</h5>
+        <select name="City" id="107">
+            <option value="KPK">KPK</option>
+            <option value="TMG">TMG</option>
+            <option value="RABBAT">RABBAT</option>
+            <option value="BATKHELA">BUTKHELA</option>
+        </select>
+        <br><br>
+        <textarea name="feedback" id="107" placeholder="Please give your valuable feedback" rows = "5" cols = "50"></textarea>
+        <br>
+        <input type="submit" value = "submit">
+        <br>
+        <h5>Recommended Video for Html</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=KCplNZxMZn0OFNsR" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <br>
+        <h5>wikipedia</h5>
+        <iframe src="https://www.wikipedia.org/" frameborder="100" height="315" width="560"></iframe>
+        <br><br>
+        <video src="WhatsApp Video 2024-04-29 at 23.02.47_b28c3923.mp4" type = "video/mp4" width="500" height="315" controls>My Video</video>
+        
+    </form>
+    
+    
+</body>
+</html>
